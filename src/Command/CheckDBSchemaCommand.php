@@ -20,7 +20,7 @@ use MoodlePluginCI\Process\MoodleProcess;
 /**
  * Run PHPUnit tests.
  */
-class PHPUnitCommand extends AbstractMoodleCommand
+class CheckDBSchemaCommand extends AbstractMoodleCommand
 {
     use ExecuteTrait;
 
