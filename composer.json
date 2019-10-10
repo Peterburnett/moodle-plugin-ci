@@ -1,5 +1,5 @@
 {
-  "name": "blackboard-open-source/moodle-plugin-ci",
+  "name": "peterburnett/moodle-plugin-ci-testing",
   "description": "Assists with running Moodle plugins in Travis CI",
   "keywords": ["moodle", "travis", "ci", "testing"],
   "type": "project",
