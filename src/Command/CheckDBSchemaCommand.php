@@ -28,7 +28,7 @@ class PHPUnitCommand extends AbstractMoodleCommand
     {
         parent::configure();
 
-        $this->setName('')
+        $this->setName('checkdbschema')
             ->setDescription('Run Check_DB_schema on the Moodle database');
     }
 
