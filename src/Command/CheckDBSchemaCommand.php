@@ -44,10 +44,10 @@ class CheckDBSchemaCommand extends AbstractMoodleCommand
         // USE MOODLE PROCESS HELPER SOMEHOW
         // EXECUTE COMMAND
         // FREE WIN???
-        $execute = $this->execute;
+        //$execute = $this->execute;
         $process = new MoodleProcess('check_db_schema.php');
         $code = 0;
-        $execute->passThroughProcess($process);
+        $this->execute->passThroughProcess($process);
         if (!$process->isSuccessful()) {
             $code = 1;
         }
