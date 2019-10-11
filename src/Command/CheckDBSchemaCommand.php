@@ -40,13 +40,9 @@ class CheckDBSchemaCommand extends AbstractMoodleCommand
 
     protected function execute(InputInterface $input, OutputInterface $output) {
         $this->outputHeading($output, 'Checking Moodle Database Schema');
-        // TODO
-        // USE MOODLE PROCESS HELPER SOMEHOW
-        // EXECUTE COMMAND
-        // FREE WIN???
-        //$execute = $this->execute;
-        $this->outputHeading($output, __DIR__.'/../../../moodle/admin/cli');
-        $process = new MoodleProcess('check_db_schema.php', __DIR__.'/../../../moodle/admin/cli');
+
+        $this->outputHeading($output, __DIR__.'/../../../');
+        $process = new MoodleProcess('check_db_schema.php', __DIR__.'/../../../');
         $code = 0;
         $this->execute->passThroughProcess($process);
         if (!$process->isSuccessful()) {
