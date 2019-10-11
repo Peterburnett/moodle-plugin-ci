@@ -35,7 +35,7 @@ class CheckDBSchemaCommand extends AbstractMoodleCommand
     protected function initialize(InputInterface $input, OutputInterface $output)
     {
         parent::initialize($input, $output);
-        //$this->initializeExecute($output, $this->getHelper('process'));
+        $this->initializeExecute($output, $this->getHelper('process'));
     }
 
     protected function execute(InputInterface $input, OutputInterface $output) {
