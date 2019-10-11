@@ -45,7 +45,7 @@ class CheckDBSchemaCommand extends AbstractMoodleCommand
         // EXECUTE COMMAND
         // FREE WIN???
         //$execute = $this->execute;
-        $process = new MoodleProcess('admin/cli/check_db_schema.php');
+        $process = new MoodleProcess('check_db_schema.php', 'admin/cli');
         $code = 0;
         $this->execute->passThroughProcess($process);
         if (!$process->isSuccessful()) {
